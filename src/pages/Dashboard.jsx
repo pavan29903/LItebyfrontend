@@ -10,7 +10,7 @@ export const Dashboard = () => {
     const [ user , setUser]  =useState('')
 
     useEffect(()=>{
-          axios.get('https://litepay-backend.vercel.app/balance',{
+          axios.get('https://litepay-backend.onrender.com/balance',{
             headers:{
                 Authorization:"Bearer "+ localStorage.getItem("token") 
             }
@@ -21,7 +21,7 @@ export const Dashboard = () => {
             })
     },[])
     useEffect(()=>{
-        axios.get("https://litepay-backend.vercel.app/bulk")
+        axios.get("https://litepay-backend.onrender.com/bulk")
             .then(response =>{
                 const users = response.data.user;
                     const lastUser = users[users.length - 1];

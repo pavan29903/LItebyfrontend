@@ -18,7 +18,7 @@ export const Signup = () => {
 
   const handleSignup = async () => {
     try {
-     const response = await axios.post("https://litepay-backend.vercel.app/signup", {
+     const response = await axios.post("https://litepay-backend.onrender.com/signup", {
         firstName,
         lastName,
         username,
