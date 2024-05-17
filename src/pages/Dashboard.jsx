@@ -10,7 +10,7 @@ export const Dashboard = () => {
     const [ user , setUser]  =useState('')
 
     useEffect(()=>{
-          axios.get('https://litepay-backend.onrender.com/balance',{
+          axios.get('https://litepay-backend.onrender.com/api/v1/account/balance',{
             headers:{
                 Authorization:"Bearer "+ localStorage.getItem("token") 
             }
@@ -21,7 +21,7 @@ export const Dashboard = () => {
             })
     },[])
     useEffect(()=>{
-        axios.get("https://litepay-backend.onrender.com/bulk")
+        axios.get("https://litepay-backend.onrender.com/api/v1/user/bulk")
             .then(response =>{
                 const users = response.data.user;
                     const lastUser = users[users.length - 1];

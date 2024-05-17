@@ -18,7 +18,7 @@ export const Signup = () => {
 
   const handleSignup = async () => {
     try {
-     const response = await axios.post("https://litepay-backend.onrender.com/signup", {
+     const response = await axios.post("https://litepay-backend.onrender.com/api/v1/user/signup", {
         firstName,
         lastName,
         username,

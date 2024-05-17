@@ -15,7 +15,7 @@ export const SendMoney = () => {
     const handleTransfer = async () => {
         setLoading(true);
         try {
-            await axios.post('https://litepay-backend.onrender.com/transfer', {
+            await axios.post('https://litepay-backend.onrender.com/api/v1/account/transfer', {
                 to: id,
                 amount
             }, {
