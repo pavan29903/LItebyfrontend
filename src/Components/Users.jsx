@@ -10,7 +10,7 @@ export const Users = () => {
     useEffect(()=>{
         const timeout = setTimeout(async () => {
             
-            await axios.get("http://localhost:3000/api/v1/user/bulk?filter="+filter)
+            await axios.get("https://litepay-backend.vercel.app/bulk?filter="+filter)
             .then(response =>{
                 setUsers(response.data.user)
             })

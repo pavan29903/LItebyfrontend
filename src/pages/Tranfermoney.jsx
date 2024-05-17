@@ -15,7 +15,7 @@ export const SendMoney = () => {
     const handleTransfer = async () => {
         setLoading(true);
         try {
-            await axios.post('http://localhost:3000/api/v1/account/transfer', {
+            await axios.post('https://litepay-backend.vercel.app/transfer', {
                 to: id,
                 amount
             }, {
