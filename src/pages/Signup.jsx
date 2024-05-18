@@ -13,7 +13,7 @@ export const Signup = () => {
   const [lastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(""); // Define error state
+  const [error, setError] = useState(""); 
   const navigate = useNavigate();
 
   const handleSignup = async () => {
