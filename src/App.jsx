@@ -19,7 +19,10 @@ function App() {
       },
       {
           path: '/signin',
-          element: <Signin />
+          element: <Signin />,
+          errorElement:<div>
+            <div>OH NO! Sign-in is under maintenance. Please sign up with different credentials to use the application</div>
+          </div>
       },
       {
           path: "/dashboard",

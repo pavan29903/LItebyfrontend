@@ -20,7 +20,7 @@ export const Signin = () => {
                 password
 
             })
-            localStorage.setItem("token" , response.data.token)
+            localStorage.getItem("token" , response.data.token)
             if(response.data.token){
                 navigate("/dashboard")
             }
