@@ -6,7 +6,7 @@ import axios from "axios"
 
 export const Dashboard = () => {
 
-    const [balance , setBalance] = useState()
+    const [balance , setBalance] = useState(0)
     const [ user , setUser]  =useState('')
 
     useEffect(()=>{
