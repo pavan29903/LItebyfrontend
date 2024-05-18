@@ -14,12 +14,13 @@ export const Signin = () => {
     const [password , setPassword] = useState("")
 
     const handleSignin = async ()=>{
-            localStorage.removeItem("token")
+            
             const response =await axios.post("https://litepay-backend.onrender.com/api/v1/user/signin",{
                 username,
                 password
 
             })
+            localStorage.removeItem('token')
             localStorage.getItem("token" , response.data.token)
             localStorage.setItem("token" , response.data.token)
             if(response.data.token){
