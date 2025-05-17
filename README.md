@@ -1,9 +1,91 @@
-# React + Vite
+# 💸 Litepay - A Simple Money Transfer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Litepay is a full-stack MERN (MongoDB, Express, React, Node.js) application that allows users to sign up, log in, view their balance, and transfer money to other users securely.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# LItebyfrontend
+- User Signup & Login
+- JWT-based Authentication
+- View account balance
+- Transfer money to other registered users
+- Success confirmation & loading states
+- Fully responsive UI with clean design
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js (Vite)
+- Tailwind CSS
+- React Router DOM
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT (JSON Web Token)
+- CORS
+
+---
+
+## 📁 Project Structure
+
+```
+litepay/
+├── client/                 # React frontend
+│   ├── Components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── server/                 # Node.js backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   ├── middleware/
+│   └── index.js
+```
+
+### 🔧 Backend Setup
+
+```bash
+cd server
+npm install
+```
+
+#### ▶️ Start Server
+
+```bash
+node index.js
+```
+
+---
+
+### 🌐 Frontend Setup
+
+```bash
+cd client
+npm install
+```
+
+#### 🖥️ Start Frontend
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌍 Deployment
+
+- **Frontend**: Vercel
+- **Backend**: Render
+---
+
+## 🙌 Acknowledgements
+
+- React & Vite
+- Express & MongoDB
+- Tailwind CSS
+
+---
